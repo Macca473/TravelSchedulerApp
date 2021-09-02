@@ -1,22 +1,26 @@
 package travelScheduler.springframework.travelSchedulerApp.Model;
 
+import javax.persistence.Entity;
+import java.util.List;
 import java.util.Set;
 
 public class Locations {
-    Set<Location> locations;
+//    Set<Location> locations;
+
+    List<Location> locations;
 
     public Locations() {
     }
 
-    public Locations(Set<Location> location) {
+    public Locations(List<Location> location) {
         this.locations = location;
     }
 
-    public Set<Location> getLocation() {
+    public List<Location> getLocation() {
         return locations;
     }
 
-    public void setLocation(Set<Location> location) {
+    public void setLocation(List<Location> location) {
         this.locations = location;
     }
 }

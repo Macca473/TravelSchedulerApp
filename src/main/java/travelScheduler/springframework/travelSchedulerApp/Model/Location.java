@@ -19,18 +19,20 @@ public class Location {
     private Date ReqDate;
     private String CityName;
     private String CityCode;
+    private String CountryName;
     private String Temperature;
     private String Clouds;
 
     public Location() {
     }
 
-    public Location(String userName, Date curDate, Date reqDate, String cityName, String cityCode, String temperature, String clouds) {
+    public Location(String userName, Date curDate, Date reqDate, String cityName, String cityCode, String countryName, String temperature, String clouds) {
         UserName = userName;
         CurDate = curDate;
         ReqDate = reqDate;
         CityName = cityName;
         CityCode = cityCode;
+        CountryName = countryName;
         Temperature = temperature;
         Clouds = clouds;
     }
@@ -71,9 +73,13 @@ public class Location {
         return CityName;
     }
 
-    public void setCityName(String cityName) {
-        CityName = cityName;
+    public void setCityName(String cityName) { CityName = cityName; }
+
+    public String getCountryName() {
+        return CountryName;
     }
+
+    public void setCountryName(String countryName) { CountryName = countryName; }
 
     public String getCityCode() {
         return CityCode;
